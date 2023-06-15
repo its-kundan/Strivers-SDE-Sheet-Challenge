@@ -22,7 +22,7 @@ vector<int> nextGreaterPermutation(vector<int> &A){
     break;
   }
   // reverse the right half
-  reverse(A.begin()+ind+1,A.end());
+  reverse(A.begin()+ind+1,A.end()); //! this is not working.
   return A;
 }
 int main()
