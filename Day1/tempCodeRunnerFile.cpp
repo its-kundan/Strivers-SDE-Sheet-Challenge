@@ -1,0 +1,1 @@
+ reverse(A.begin()+ind+1,A.end());
