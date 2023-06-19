@@ -15,14 +15,14 @@ vector<int> findMissingRepeatingNumbers(vector<int> a) {
   int one=0,zero=0;
   for(int i=0;i<n;i++){
     // part of one group
-    if(a[i]& number !=0)
+    if((a[i]& number) !=0)
       one ^=a[i];
     // part of zero group
     else
       zero^=a[i];
   }
   for(int i=1;i<=n;i++){
-    if(number & i !=0)
+    if((number & i) !=0)
     one^=i;
     else 
     zero^=i;
